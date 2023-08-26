@@ -1,11 +1,10 @@
 import React from 'react';
-import PathologyCard from './PathologyCard';
+import {pathologies} from './data/pathologyData';
+import PathologyCard from './CardComponent/PathologyCard';
 
-function App() {
-  return (
-    <div className="App">
-      <PathologyCard pathology= 'TDAH' />
-    </div>
+function App(props) {
+  return pathologies.map(pathology =>
+    <PathologyCard pathologyObject = {pathology}/>
   );
 }
 
