@@ -5,9 +5,15 @@ function Header(props){
   return (
     <div>
       <img src={props.pathologyImg}/>
-      <h1>{props.pathologyName}</h1>
+      <h1 style={titleStyle} >{props.pathologyName}</h1>
     </div>
   );
 };
+
+const titleStyle = {
+    background: '#ADD8E6',
+    color: 'blue',
+    fontSize: 20
+}
 
 export default Header;
